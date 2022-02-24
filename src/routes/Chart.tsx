@@ -2,7 +2,7 @@ import { useQuery } from "react-query";
 import { fetchCoinHistory } from "../api";
 import ApexChart from "react-apexcharts";
 import { chdir } from "process";
-import { theme } from "../theme";
+import { darkTheme, lightTheme } from "../theme";
 interface IHistorical {
   time_open: string;
   time_close: string;
