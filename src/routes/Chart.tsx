@@ -60,8 +60,19 @@ function Chart({ coinId }: ChartProps) {
             xaxis: {
               axisTicks: { show: false },
               axisBorder: { show: false },
+              type: "datetime",
+              categories: data?.map((price) => price.time_close),
               labels: {
                 show: false,
+              },
+            },
+            fill: {
+              type: "gradient",
+              gradient: { gradientToColors: ["white"], stops: [0, 100] },
+            },
+            tooltip: {
+              y: {
+                formatter: (value) => `$${value.toFixed(2)}`,
               },
             },
           }}
