@@ -76,5 +76,3 @@ function App() {
 }
 
 export default App;
-
-/* stage_management -> todo_list */
