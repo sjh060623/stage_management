@@ -76,7 +76,10 @@ function Chart({ coinId }: ChartProps) {
             },
             fill: {
               type: "gradient",
-              gradient: { gradientToColors: ["white"], stops: [0, 100] },
+              gradient: {
+                gradientToColors: [isDark ? "white" : "#97e8dd"],
+                stops: [0, 100],
+              },
             },
             tooltip: {
               y: {
