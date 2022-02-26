@@ -84,3 +84,5 @@ function App() {
   );
 }
 export default App;
+
+/* 1.5 => Recap */
