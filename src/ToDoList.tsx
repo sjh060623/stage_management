@@ -24,6 +24,7 @@ import { useForm } from "react-hook-form";
 }*/
 function ToDoList() {
   const { register, watch } = useForm();
+  console.log(watch());
   return (
     <div>
       <form>
